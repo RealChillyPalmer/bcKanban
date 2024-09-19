@@ -4,7 +4,27 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
 export const login = async (req: Request, res: Response) => {
-  // TODO: If the user exists and the password is correct, return a JWT token
+  //* TODO: If the user exists and the password is correct, return a JWT token
+  const { username, password } = req.body;
+
+const user = await User.findOne({
+  where: { username }, 
+});
+
+if (!user) {
+  return res.status(401).json({ message: 'Authenication Failed' })
+}
+
+const validPass = await bcrypt.compare(password, user.password);
+
+if (!validPass) {
+  return res.status(401).json({ message: 'Authentication Failed'})
+}
+
+const secretKey = process.env.JWT_SECRET_KEY || '';
+const token = jwt.sign({ username }, secretKey, { expiresIn: '24h' });
+
+return res.json({ token });
 };
 
 const router = Router();
