@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import auth from '../utils/auth';
 
 const Navbar = () => {
-  const [ loginCheck, setLoginCheck ] = useState(false);
+  const [loginCheck, setLoginCheck] = useState(false);
 
   const checkLogin = () => {
     if(auth.loggedIn()) {
@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     console.log(loginCheck);
     checkLogin();
-  }, [loginCheck])
+  }, [loginCheck]);
 
   return (
     <div className='nav'>

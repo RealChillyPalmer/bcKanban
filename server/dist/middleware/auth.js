@@ -5,8 +5,8 @@ export const authenticateToken = (req, res, next) => {
     if (authHeader) {
         const token = authHeader.split(' ')[1];
         const secretKey = process.env.JWT_SECRET_KEY || '';
-        jwt.verify(token, secretKey, (error, user) => {
-            if (error) {
+        jwt.verify(token, secretKey, (err, user) => {
+            if (err) {
                 return res.sendStatus(403);
             }
             req.user = user;

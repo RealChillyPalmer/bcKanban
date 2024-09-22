@@ -11,9 +11,8 @@ const login = async (userInfo: UserLogin) => {
     body: JSON.stringify(userInfo)
   });  
   const data = await response.json();
-  console.log(data)
+  console.log(data);
   return data;
-
 }
 
 
