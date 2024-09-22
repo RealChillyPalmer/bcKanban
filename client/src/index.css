@@ -28,11 +28,11 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #f62727f4;
 }
 
 body {
-  background: #ECF0F1;
+  background: #232424;
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
@@ -49,17 +49,17 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #33c32e;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #f62727f4;
 }
 button:focus,
 button:focus-visible {
@@ -105,7 +105,7 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-title a {
-  color: #b864c4;
+  color: #33c32e;
 }
 
 .nav-item {
@@ -147,20 +147,21 @@ tbody tr:nth-child(odd) {
 }
 
 .todo {
-  background-color: #e9cbec;
+  background-color: #f62727f4;
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background-color: #ded350;
 }
 
 .done {
-  background-color: #732381;
+  background-color: #33c32e;
 }
 
 .ticket-card {
   text-align: left;
-  background-color: #fff;
+  background-color: #000000;
+  color: #f1ecec;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -169,9 +170,9 @@ tbody tr:nth-child(odd) {
 }
 
 .container {
-  /* margin: auto; */
+ margin: auto;
   width: 100%;
-  /* height: 90%; */
+  height: 80%; 
 }
 
 #create-ticket-link {
@@ -182,8 +183,8 @@ tbody tr:nth-child(odd) {
 
 .form {
   width: 60%;
-  height: 80%;
-  background-color: #b864c4;
+  height: 90%;
+  background-color: #ded350;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -192,7 +193,7 @@ tbody tr:nth-child(odd) {
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: rgb(2, 2, 2);
 }
 
 .form > input {
@@ -201,7 +202,7 @@ tbody tr:nth-child(odd) {
 }
 
 .form > label {
-  margin-top: 2.5%;
+  margin-top: .5%;
   margin-bottom: 2.5%;
 }
 
@@ -232,7 +233,7 @@ tbody tr:nth-child(odd) {
 }
 
 .deleteBtn:hover {
-  color: #535bf2;
+  color: #f2f253;
 }
 
 .login-notice {
@@ -249,7 +250,7 @@ tbody tr:nth-child(odd) {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #f62727f4;
   }
   button {
     background-color: #f9f9f9;

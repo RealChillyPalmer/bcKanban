@@ -23,6 +23,8 @@ const TicketCard = ({ ticket, deleteTicket }: TicketCardProps) => {
     }
   };
 
+  
+
   return (
     <div className='ticket-card'>
       <h3>{ticket.name}</h3>
