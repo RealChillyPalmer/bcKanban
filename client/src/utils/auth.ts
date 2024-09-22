@@ -9,16 +9,14 @@ class AuthService {
 
   loggedIn() {
     // TODO: return a value that indicates if the user is logged in
-    const jwt = this.getToken();
-    return !!jwt && !this.isTokenExpired(jwt);
+    const token = this.getToken();
+    return !!token && !this.isTokenExpired(token);
   }
   
-  isTokenExpired(jwt: string) {
+  isTokenExpired(token: string) {
     // TODO: return a value that indicates if the token is expired
-    try {
-
-    
-    const decode = jwtDecode<JwtPayload>(jwt);
+    try {    
+    const decode = jwtDecode<JwtPayload>(token);
     console.log(decode);
 
     if (decode?.exp && decode?.exp < Date.now()) {
