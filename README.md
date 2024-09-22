@@ -8,7 +8,7 @@
 
 ## Installation Instructions/Dependencies:
 
-   #### To install enter terminal and type npm i to install all necessary dependencies. Then run the chema file to start server.
+   #### To install enter terminal and type npm i to install all necessary dependencies. Then run the schema file to start server.
 
 ## Usage Info:
 
